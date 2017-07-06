@@ -8,7 +8,9 @@ Author: Authors@R: c(
 Maintainer: Komal Rathi <rathik@email.chop.edu>
 Description: Package accesses the Disease Express, a database of RNA-Seq gene expression all processed and normalized in the same manner.
 Depends: R (>= 3.1.0)
-Imports: httr, readr
+Imports: 
+	httr,
+	readr
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
