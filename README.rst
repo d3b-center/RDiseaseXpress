@@ -31,8 +31,18 @@ Then, install with this command:
 
 	R CMD INSTALL --no-multiarch --with-keep.source RDiseaseXpress
 
-You should be able to enter R and access the package with:
+or install within R to install all dependencies like *readr*:
+
+.. code-block:: bash
+
+	devtools::install_deps("/path/to/RDiseaseXpress", dependencies = TRUE)
+
+Within R, access the package using:
 
 .. code-block:: bash
 
 	library(RDiseaseXpress)
+	
+	# get documentation
+	help('RDiseaseXpress')
+
