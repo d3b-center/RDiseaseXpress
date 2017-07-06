@@ -7,7 +7,7 @@ Author: Authors@R: c(
     person("Komal", "Rathi", email = "rathik@email.chop.edu", role = "aut"))
 Maintainer: Komal Rathi <rathik@email.chop.edu>
 Description: Package accesses the Disease Express, a database of RNA-Seq gene expression all processed and normalized in the same manner.
-Depends: R (>= 3.1.0)
+Depends: R (>= 3.1.0), readr
 Imports: httr
 License: MIT + file LICENSE
 Encoding: UTF-8
