@@ -23,16 +23,16 @@ To install package simply clone the repository:
 
 .. code-block:: bash
 
-	git clone https://github.research.chop.edu/ramanp/RDiseaseExpress.git
+	git clone https://github.research.chop.edu/rathik/RDiseaseXpress.git
 
 Then, install with this command:
 
 .. code-block:: bash
 
-	R CMD INSTALL --no-multiarch --with-keep.source RDiseaseExpress
+	R CMD INSTALL --no-multiarch --with-keep.source RDiseaseXpress
 
 You should be able to enter R and access the package with:
 
 .. code-block:: bash
 
-	library(RDiseaseExpress)
+	library(RDiseaseXpress)
