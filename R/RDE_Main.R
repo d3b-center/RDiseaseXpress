@@ -27,7 +27,12 @@ getDataAnnotationByEnsemblGeneID <- function(myEnsemblGeneIDs = NULL, printURL =
   sampleData <- getSamples()
   geneInfo <- getEnsemblGeneIDsInfo(myEnsemblGeneIDs)
   mergeData <- merge(geneData, sampleData, by = "data.sample_id", by.y = "sample_id")
-  mergeData <- merge(mergeData, geneInfo, by.x = c("gene_id","gene_symbol","data.transcripts.transcript_id"), by.y = c("gene_id","gene_symbol","transcripts.transcript_id"))
+  if(!is.null(myNorms) && length(myNorms) == 1 && myNorms == 'rsem') {
+    geneInfo <- unique(geneInfo[,grep('transcripts', colnames(geneInfo), invert = T)])
+    mergeData <- merge(mergeData, geneInfo, by.x = c("gene_id", "gene_symbol"), by.y = c("gene_id", "gene_symbol"))
+  } else {
+    mergeData <- merge(mergeData, geneInfo, by.x = c("gene_id", "gene_symbol", "data.transcripts.transcript_id"), by.y = c("gene_id", "gene_symbol", "transcripts.transcript_id"))
+  }
   return(mergeData)
 }
 
@@ -60,7 +65,12 @@ getDataAnnotationByGeneSymbol <- function(myGeneSymbols = NULL, printURL = FALSE
   sampleData <- getSamples()
   geneInfo <- getGeneSymbolsInfo(myGeneSymbols)
   mergeData <- merge(geneData, sampleData, by.x = "data.sample_id", by.y = "sample_id")
-  mergeData <- merge(mergeData, geneInfo, by.x = c("gene_id","gene_symbol","data.transcripts.transcript_id"), by.y = c("gene_id","gene_symbol","transcripts.transcript_id"))
+  if(!is.null(myNorms) && length(myNorms) == 1 && myNorms == 'rsem') {
+    geneInfo <- unique(geneInfo[,grep('transcripts', colnames(geneInfo), invert = T)])
+    mergeData <- merge(mergeData, geneInfo, by.x = c("gene_id", "gene_symbol"), by.y = c("gene_id", "gene_symbol"))
+  } else {
+    mergeData <- merge(mergeData, geneInfo, by.x = c("gene_id", "gene_symbol", "data.transcripts.transcript_id"), by.y = c("gene_id", "gene_symbol", "transcripts.transcript_id"))
+  }
   return(mergeData)
 }
 
@@ -89,10 +99,13 @@ getDataAnnotationByGeneSymbol <- function(myGeneSymbols = NULL, printURL = FALSE
 #'
 #' @export
 getDataAnnotationByTranscript <- function(myTranscripts = NULL, printURL = FALSE, printTime = FALSE, myStudy = NULL, myNorms = NULL) {
+  if(!is.null(myNorms) && length(myNorms) == 1 && myNorms == 'rsem') {
+    stop('myNorms cannot be rsem. Please select one of: sample_rsem_isoform, sample_abundance or NULL')
+  }
   transcriptData <- getDataFromTranscript(myTranscripts = myTranscripts, printURL = printURL, printTime = printTime, myStudy = myStudy, myNorms = myNorms)
   sampleData <- getSamples()
   transcriptInfo <- getTranscriptInfo(myTranscripts)
   mergeData <- merge(transcriptData, sampleData, by.x = "data.sample_id", by.y = "sample_id")
-  mergeData <- merge(mergeData, transcriptInfo, by = c("gene_id","gene_symbol","data.transcripts.transcript_id"), by.y = c("gene_id","gene_symbol","transcript_id"))
+  mergeData <- merge(mergeData, transcriptInfo, by = c("gene_id", "gene_symbol", "data.transcripts.transcript_id"), by.y = c("gene_id", "gene_symbol", "transcript_id"))
   return(mergeData)
 }
