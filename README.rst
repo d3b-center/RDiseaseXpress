@@ -17,7 +17,7 @@ DiseaseXpress R Package
 Introduction
 ============
 
-R Package to access the Disease Express Database.
+R Package to access the DiseaseXpress database. This package will allow you to pull RNA-seq gene expression data processed using three normalization types (RSEM FPKM, RSEM TPM and Kallisto TPM) available across four studies PNOC, GTEx, TARGET and TCGA. You can query by Ensembl Gene ID (Gencode), Transcript ID or HUGO gene symbol.
 
 To install package simply clone the repository:
 
