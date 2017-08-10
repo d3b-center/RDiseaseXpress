@@ -23,7 +23,11 @@ To install package simply clone the repository:
 
 .. code-block:: bash
 
-	git clone https://github.research.chop.edu/rathik/RDiseaseXpress.git
+        # https
+	git clone https://github.com/d3b-center/RDiseaseXpress.git
+	
+	# ssh
+	git clone git@github.com:d3b-center/RDiseaseXpress.git
 
 Then, install with this command:
 
