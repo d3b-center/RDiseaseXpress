@@ -31,7 +31,7 @@ Then, install with this command:
 
 	R CMD INSTALL --no-multiarch --with-keep.source RDiseaseXpress
 
-or install within R to install all dependencies like *readr*:
+or install within R to install all dependencies like **readr**:
 
 .. code-block:: bash
 
