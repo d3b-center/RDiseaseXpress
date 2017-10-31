@@ -4,7 +4,7 @@
 DiseaseXpress R Package
 ***********************
 
-:authors: Pichai Raman, Komal Rathi
+:authors: Komal Rathi, Pichai Raman
 :contact: rathik@email.chop.edu
 :organization: DBHi, CHOP
 :status: This is "work in progress"
