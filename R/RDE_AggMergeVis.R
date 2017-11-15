@@ -10,7 +10,7 @@
 #'
 #' @export
 returnBaseEndPoint <- function() {
-  api <- "http://disease-express.dev.cavatica-dns.org/api/v1/"
+  api <- "http://disease-express.cavatica-dns.org/api/v1/"
   return(api)
 }
 
