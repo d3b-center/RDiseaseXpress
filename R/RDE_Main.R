@@ -11,13 +11,13 @@
 #' @return dataframe of sample and expression data corresponding to the query.
 #'
 #' @examples
-#' getDataAnnotationByEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12", "ENSG00000134323.11"),
+#' getDataAnnotationByEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12", "ENSG00000134323.10"),
 #'   printURL = TRUE, printTime = TRUE, myStudy = c("TARGET", "TCGA"),
 #'   myNorms = NULL)
-#' getDataAnnotationByEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12", "ENSG00000134323.11"),
+#' getDataAnnotationByEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12", "ENSG00000134323.10"),
 #'   printURL = TRUE, printTime = TRUE, myStudy = "GTEx",
 #'   myNorms = c("rsem", "sample_rsem_isoform"))
-#' getDataAnnotationByEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12", "ENSG00000134323.11"),
+#' getDataAnnotationByEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12", "ENSG00000134323.10"),
 #'   printURL = TRUE, printTime = TRUE, myStudy = NULL,
 #'   myNorms = NULL)
 #'

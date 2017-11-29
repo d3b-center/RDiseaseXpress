@@ -10,7 +10,7 @@
 #'
 #' @export
 returnBaseEndPoint <- function() {
-  api <- "http://disease-express.cavatica-dns.org/api/v1/"
+  api <- "http://disease-express.dev.cavatica-dns.org/api/"
   return(api)
 }
 
@@ -203,7 +203,7 @@ getTranscripts <- function(printURL = FALSE, printTime = FALSE) {
 #'
 #' @examples
 #' getEnsemblGeneIDsInfo(myEnsemblGeneIDs = "ENSG00000002079.12")
-#' getEnsemblGeneIDsInfo(myEnsemblGeneIDs = c("ENSG00000002079.12", "ENSG00000134323.11"))
+#' getEnsemblGeneIDsInfo(myEnsemblGeneIDs = c("ENSG00000002079.12", "ENSG00000134323.10"))
 #'
 #' @export
 getEnsemblGeneIDsInfo <- function(myEnsemblGeneIDs = NULL, printURL = FALSE, printTime = FALSE) {
@@ -274,9 +274,9 @@ getTranscriptInfo <- function(myTranscripts = NULL, printURL = FALSE, printTime 
 #' @return dataframe of expression data corresponding to query ids
 #'
 #' @examples
-#' getGeneDataFromEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12","ENSG00000134323.11"), printURL = TRUE, printTime = TRUE, myStudy = c("TARGET", "TCGA"), myNorms = NULL)
-#' getGeneDataFromEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12","ENSG00000134323.11"), printURL = TRUE, printTime = TRUE, myStudy = "GTEx", myNorms = c("rsem", "sample_rsem_isoform"))
-#' getGeneDataFromEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12","ENSG00000134323.11"), printURL = TRUE, printTime = TRUE, myStudy = NULL, myNorms = NULL)
+#' getGeneDataFromEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12","ENSG00000134323.10"), printURL = TRUE, printTime = TRUE, myStudy = c("TARGET", "TCGA"), myNorms = NULL)
+#' getGeneDataFromEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12","ENSG00000134323.10"), printURL = TRUE, printTime = TRUE, myStudy = "GTEx", myNorms = c("rsem", "sample_rsem_isoform"))
+#' getGeneDataFromEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12","ENSG00000134323.10"), printURL = TRUE, printTime = TRUE, myStudy = NULL, myNorms = NULL)
 #'
 #' @export
 getGeneDataFromEnsemblGeneID <- function(myEnsemblGeneIDs = NULL, myProjection = "summary", printURL = FALSE, printTime = FALSE, myStudy = NULL, myNorms = NULL) {
