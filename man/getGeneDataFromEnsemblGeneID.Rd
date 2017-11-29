@@ -28,8 +28,8 @@ dataframe of expression data corresponding to query ids
 Get expression data by ensembl gene id
 }
 \examples{
-getGeneDataFromEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12","ENSG00000134323.11"), printURL = TRUE, printTime = TRUE, myStudy = c("TARGET", "TCGA"), myNorms = NULL)
-getGeneDataFromEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12","ENSG00000134323.11"), printURL = TRUE, printTime = TRUE, myStudy = "GTEx", myNorms = c("rsem", "sample_rsem_isoform"))
-getGeneDataFromEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12","ENSG00000134323.11"), printURL = TRUE, printTime = TRUE, myStudy = NULL, myNorms = NULL)
+getGeneDataFromEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12","ENSG00000134323.10"), printURL = TRUE, printTime = TRUE, myStudy = c("TARGET", "TCGA"), myNorms = NULL)
+getGeneDataFromEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12","ENSG00000134323.10"), printURL = TRUE, printTime = TRUE, myStudy = "GTEx", myNorms = c("rsem", "sample_rsem_isoform"))
+getGeneDataFromEnsemblGeneID(myEnsemblGeneIDs = c("ENSG00000002079.12","ENSG00000134323.10"), printURL = TRUE, printTime = TRUE, myStudy = NULL, myNorms = NULL)
 
 }

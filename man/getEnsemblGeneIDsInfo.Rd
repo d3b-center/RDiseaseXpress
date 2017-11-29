@@ -22,6 +22,6 @@ Get feature info by ensembl gene id
 }
 \examples{
 getEnsemblGeneIDsInfo(myEnsemblGeneIDs = "ENSG00000002079.12")
-getEnsemblGeneIDsInfo(myEnsemblGeneIDs = c("ENSG00000002079.12", "ENSG00000134323.11"))
+getEnsemblGeneIDsInfo(myEnsemblGeneIDs = c("ENSG00000002079.12", "ENSG00000134323.10"))
 
 }
