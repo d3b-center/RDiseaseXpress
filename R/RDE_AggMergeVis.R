@@ -185,7 +185,7 @@ getGeneSymbols <- function(printURL = FALSE, printTime = FALSE) {
 #' @export
 getTranscripts <- function(printURL = FALSE, printTime = FALSE) {
   api <- returnBaseEndPoint()
-  myURL <- paste0(api, "transcripts/ids")
+  myURL <- paste0(api, "transcripts")
   output <- retrieveDataJSON(myURL, printURL = printURL, printTime = printTime)
   output <- unlist(output)
   return(output)
@@ -255,7 +255,7 @@ getGeneSymbolsInfo <- function(myGeneSymbols = NULL, printURL = FALSE, printTime
 getTranscriptInfo <- function(myTranscripts = NULL, printURL = FALSE, printTime = FALSE) {
   api <- returnBaseEndPoint()
   myTranscriptsString <- paste(myTranscripts, collapse = ",")
-  myURL <- paste0(api, "transcripts/ids/", myTranscriptsString)
+  myURL <- paste0(api, "transcripts/", myTranscriptsString)
   output <- retrieveDataTAB(myURL, printURL = printURL, printTime = printTime)
   return(output)
 }
