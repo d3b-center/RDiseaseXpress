@@ -265,7 +265,7 @@ getTranscriptInfo <- function(myTranscripts = NULL, printURL = FALSE, printTime 
 #' Get expression data by ensembl gene id
 #'
 #' @param myEnsemblGeneIDs character vector of ensembl gene ids to query. Use \code{\link{getEnsemblGeneIDs}} to get all available ensembl gene ids.
-#' @param myProjection character string. 'summary' by default.
+#' @param myProjection character string. Allowed values: 'detailed' or 'summary'(by default).
 #' @param printURL logical to print URL
 #' @param printTime logical to print time taken
 #' @param myStudy character vector of studies to query. If NULL, returns data for all studies. Use \code{\link{getStudies}} to get all available studies.
@@ -306,7 +306,7 @@ getGeneDataFromEnsemblGeneID <- function(myEnsemblGeneIDs = NULL, myProjection =
 #' Get expression data by hugo gene symbol
 #'
 #' @param myGeneSymbols character vector of hugo gene symbols to query. Use \code{\link{getGeneSymbols}} to get all available gene symbols.
-#' @param myProjection character string. 'summary' by default.
+#' @param myProjection character string. Allowed values: 'detailed' or 'summary'(by default).
 #' @param printURL logical to print URL
 #' @param printTime logical to print time taken
 #' @param myStudy character vector of studies to query. If NULL, returns data for all studies. Use \code{\link{getStudies}} to get all available studies.
@@ -347,7 +347,7 @@ getGeneDataFromGeneSymbol <- function(myGeneSymbols = NULL, myProjection = "summ
 #' Get expression data by ensembl transcript id
 #'
 #' @param myTranscripts character vector of ensembl transcript id to query. Use \code{\link{getTranscripts}} to get all available transcript ids.
-#' @param myProjection character string. 'summary' by default.
+#' @param myProjection character string. Allowed values: 'detailed' or 'summary'(by default).
 #' @param printURL logical to print URL
 #' @param printTime logical to print time taken
 #' @param myStudy character vector of studies to query. If NULL, returns data for all studies. Use \code{\link{getStudies}} to get all available studies.
