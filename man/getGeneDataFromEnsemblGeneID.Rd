@@ -11,7 +11,7 @@ getGeneDataFromEnsemblGeneID(myEnsemblGeneIDs = NULL,
 \arguments{
 \item{myEnsemblGeneIDs}{character vector of ensembl gene ids to query. Use \code{\link{getEnsemblGeneIDs}} to get all available ensembl gene ids.}
 
-\item{myProjection}{character string. 'summary' by default.}
+\item{myProjection}{character string. Allowed values: 'detailed' or 'summary'(by default).}
 
 \item{printURL}{logical to print URL}
 

@@ -4,8 +4,9 @@
 \alias{getDataAnnotationByEnsemblGeneID}
 \title{Get expression data by ensembl gene id}
 \usage{
-getDataAnnotationByEnsemblGeneID(myEnsemblGeneIDs = NULL, printURL = FALSE,
-  printTime = FALSE, myStudy = NULL, myNorms = NULL)
+getDataAnnotationByEnsemblGeneID(myEnsemblGeneIDs = NULL,
+  printURL = FALSE, printTime = FALSE, myStudy = NULL,
+  myNorms = NULL)
 }
 \arguments{
 \item{myEnsemblGeneIDs}{character vector of ensembl gene id to query. Use \code{\link{getEnsemblGeneIDs}} to get all available ensembl gene ids.}

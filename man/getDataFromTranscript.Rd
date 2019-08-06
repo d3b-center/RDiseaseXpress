@@ -5,12 +5,13 @@
 \title{Get expression data by ensembl transcript id}
 \usage{
 getDataFromTranscript(myTranscripts = NULL, myProjection = "summary",
-  printURL = FALSE, printTime = FALSE, myStudy = NULL, myNorms = NULL)
+  printURL = FALSE, printTime = FALSE, myStudy = NULL,
+  myNorms = NULL)
 }
 \arguments{
 \item{myTranscripts}{character vector of ensembl transcript id to query. Use \code{\link{getTranscripts}} to get all available transcript ids.}
 
-\item{myProjection}{character string. 'summary' by default.}
+\item{myProjection}{character string. Allowed values: 'detailed' or 'summary'(by default).}
 
 \item{printURL}{logical to print URL}
 
