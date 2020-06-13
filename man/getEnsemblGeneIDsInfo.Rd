@@ -4,8 +4,11 @@
 \alias{getEnsemblGeneIDsInfo}
 \title{Get feature info by ensembl gene id}
 \usage{
-getEnsemblGeneIDsInfo(myEnsemblGeneIDs = NULL, printURL = FALSE,
-  printTime = FALSE)
+getEnsemblGeneIDsInfo(
+  myEnsemblGeneIDs = NULL,
+  printURL = FALSE,
+  printTime = FALSE
+)
 }
 \arguments{
 \item{myEnsemblGeneIDs}{character vector of ensembl ids to query. Use \code{\link{getEnsemblGeneIDs}} to get all available ensembl gene ids.}

@@ -4,8 +4,7 @@
 \alias{getTranscriptInfo}
 \title{Get feature info by ensembl transcript id}
 \usage{
-getTranscriptInfo(myTranscripts = NULL, printURL = FALSE,
-  printTime = FALSE)
+getTranscriptInfo(myTranscripts = NULL, printURL = FALSE, printTime = FALSE)
 }
 \arguments{
 \item{myTranscripts}{character vector of ensembl transcript ids to query. Use \code{\link{getTranscripts}} to get all available ensembl transcripts ids.}

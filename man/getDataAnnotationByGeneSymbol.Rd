@@ -4,8 +4,13 @@
 \alias{getDataAnnotationByGeneSymbol}
 \title{Get expression data by hugo gene symbol}
 \usage{
-getDataAnnotationByGeneSymbol(myGeneSymbols = NULL, printURL = FALSE,
-  printTime = FALSE, myStudy = NULL, myNorms = NULL)
+getDataAnnotationByGeneSymbol(
+  myGeneSymbols = NULL,
+  printURL = FALSE,
+  printTime = FALSE,
+  myStudy = NULL,
+  myNorms = NULL
+)
 }
 \arguments{
 \item{myGeneSymbols}{character vector of hugo gene symbol to query. Use \code{\link{getGeneSymbols}} to get all available gene symbols.}

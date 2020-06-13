@@ -4,9 +4,14 @@
 \alias{getGeneDataFromEnsemblGeneID}
 \title{Get expression data by ensembl gene id}
 \usage{
-getGeneDataFromEnsemblGeneID(myEnsemblGeneIDs = NULL,
-  myProjection = "summary", printURL = FALSE, printTime = FALSE,
-  myStudy = NULL, myNorms = NULL)
+getGeneDataFromEnsemblGeneID(
+  myEnsemblGeneIDs = NULL,
+  myProjection = "summary",
+  printURL = FALSE,
+  printTime = FALSE,
+  myStudy = NULL,
+  myNorms = NULL
+)
 }
 \arguments{
 \item{myEnsemblGeneIDs}{character vector of ensembl gene ids to query. Use \code{\link{getEnsemblGeneIDs}} to get all available ensembl gene ids.}

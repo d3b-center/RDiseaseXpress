@@ -4,8 +4,7 @@
 \alias{getGeneSymbolsInfo}
 \title{Get feature info by hugo gene symbol}
 \usage{
-getGeneSymbolsInfo(myGeneSymbols = NULL, printURL = FALSE,
-  printTime = FALSE)
+getGeneSymbolsInfo(myGeneSymbols = NULL, printURL = FALSE, printTime = FALSE)
 }
 \arguments{
 \item{myGeneSymbols}{character vector of hugo gene symbols to query. Use \code{\link{getGeneSymbols}} to get all available ensembl gene symbols.}

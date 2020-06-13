@@ -4,8 +4,12 @@
 \alias{getSamples}
 \title{Get sample metadata}
 \usage{
-getSamples(myStudy = NULL, allStudies = TRUE, printURL = FALSE,
-  printTime = FALSE)
+getSamples(
+  myStudy = NULL,
+  allStudies = TRUE,
+  printURL = FALSE,
+  printTime = FALSE
+)
 }
 \arguments{
 \item{myStudy}{character vector of one or more studies. Use \code{\link{getStudies}} to get all available studies.}
