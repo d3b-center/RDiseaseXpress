@@ -14,6 +14,11 @@ DiseaseXpress R Package
    :keywords: R package, DiseaseXpress, 2017
    :description: DBHi R package.
 
+NOTE
+====
+
+This repo is **deprecated**. Plan is to update the package by pulling in data from https://github.com/d3b-center/OpenPedCan-analysis
+
 Introduction
 ============
 
